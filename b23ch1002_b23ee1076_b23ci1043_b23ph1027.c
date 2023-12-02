@@ -1,10 +1,10 @@
-#include<stdio.h>
+ #include<stdio.h>
 #include<string.h>
 #define F "fever"
 #define V "visit"
 #define R "registration"
-#define I "inpatient"
-#define O "outpatient"
+#define I "INPATIENT"
+#define O "OUTPATIENT"
 #define cbp "CBP"
 #define crp "CRP"
 #define ns1 "NS1"
@@ -77,7 +77,7 @@
   }
   void search()
   {
-    printf("ENTER THE NAME OF DOCTOR (OR) PATIENT WITH REGISTRATION NO:");
+    printf("ENTER THE NAME OF DOCTOR (OR) PATIENT WITH REGISTRATION NO(in singleword):");
     FILE* fp1;
     char s[100],S[]=".txt";
     scanf("%s",s);
@@ -95,6 +95,13 @@ int main()
   FILE* fp3;
   fp2=fopen("records1.txt","a");
   char reason_of_visit[20];
+  printf("OUR DOCTORS:\n");
+  printf("Sunakshi Singh MBBS MD Dermotologist\n");
+  printf("Deepak Kumar Sinha MBBS,DNB generalsurgeon \n");
+  printf("Sanjeev Gupta MBBS MS GeneralSurgeon \n");
+  printf("Pankaj Sareen MBBS MS General Physician\n");
+  printf("Amritha Singh MBBS MS Gynacologist\n");
+  printf("Tests offered By us : CBP,CRP,NS1\n");
   printf("visit or registration:\n");
   scanf("%s",reason_of_visit);
   if(strcmp(V,reason_of_visit)==0){
@@ -113,26 +120,26 @@ int main()
     scanf("%s",lastname);
   fputs("NAME:",fp);
   fputs(firstname,fp);
-   fputs(" ",fp);
+  fputs(" ",fp);
   fputs(lastname,fp);
-fputs(firstname,fp2);
+  fputs(firstname,fp2);
   printf("Sex:\n");
   scanf("%s",sex);
   fputs("\nSEX:",fp);
   fputs(sex,fp);
-  printf("Age:\n");
+  printf("AGE:\n");
   int age;
   scanf("%d",&age);
-  fprintf(fp,"\nAge:%d", age);
+  fprintf(fp,"\nAGE:%d", age);
   printf("Mobile.No: ");
   long long  mobile_no;
   scanf("%lld",&mobile_no);
-  fprintf(fp,"\nMobile.No: %lld",mobile_no);
+  fprintf(fp,"\nMOBILE NO.: %lld",mobile_no);
   fprintf(fp2,"\t\t%lld",mobile_no);
   char purpose_of_visit[1024];
   printf("Purpose of Visit(in one word):\n");
   scanf("%s",purpose_of_visit);
-  fputs("\nPurpose of visit:",fp);
+  fputs("\nPURPOSE OF VISIT:",fp);
   fputs(purpose_of_visit,fp);
   char doctor_firstname[100],doctor_lastname[100];
   printf("Doctor to visit:\n");
@@ -140,7 +147,7 @@ fputs(firstname,fp2);
   scanf("%s",doctor_firstname);
    printf("Doctor last name:\n");
   scanf("%s",doctor_lastname);
-  fputs("\nDoctor to visit:",fp);
+  fputs("\nDOCTOR TO VISIT:",fp);
   fputs(doctor_firstname,fp);
    fputs(" ",fp);
   fputs(doctor_lastname,fp);
@@ -151,10 +158,10 @@ fputs(firstname,fp2);
   int spO2;
   printf("Enter the Height of patient: \n");
   scanf("%f",&height);
-  fprintf(fp,"\nHeight:%.2f",height);
+  fprintf(fp,"\nHEIGHT:%.2f",height);
     printf("Enter the Weight of patient: \n");
     scanf("%f",&weight);
-    fprintf(fp,"\nWeight:%.2f kg",weight);
+    fprintf(fp,"\nWEIGHT:%.2f kg",weight);
     printf("Enter the BP of patient: \n");
     scanf("%d%d",&uBP,&lBP);
     fprintf(fp,"\nBP:%d/%d",uBP,lBP);
@@ -163,11 +170,11 @@ fputs(firstname,fp2);
     fprintf(fp,"\nSP02:%d",spO2);
     if(strcmp(purpose_of_visit,F)==0){
       float temp;
-      printf("Enter The Temperature");
+      printf("Enter The Temperature:\n");
       scanf("%f",&temp);
-     fprintf(fp,"\nTemperature:%.2f",temp);
+     fprintf(fp,"\nTEMPERATURE:%.2f",temp);
     }
-    printf("Go To the doctor");
+    printf("Go To the doctor\n");
     char test1[40],test2[40],test3[40];
     printf("TEST1:");
     scanf("%s",test1);
@@ -218,7 +225,7 @@ fputs(firstname,fp2);
    {
     CRP();
     }
-    else if(strcmp(test2,ns1)==0) 
+    else if(strcmp(test3,ns1)==0) 
     {
       NS1();
     }
@@ -229,45 +236,61 @@ fputs(firstname,fp2);
 
 
 printf("AFTER RESULTS");
-printf("IN PATIENT OR OUT PATIENT");
+printf("\nINPATIENT OR OUTPATIENT ");
 char inout[50];
 scanf("%s",inout);
 if(strcmp(I,inout)==0)
 {
- fputs("\t\t IN PATIENT\n",fp2);
+ fputs("\t\t IN PATIENT",fp2);
+  printf("Discharge date:");
+  int date,month,year;
+  scanf("%d %d %d",&date,&month,&year);
+  fprintf(fp2,"\t\t %d/%d/%d\n",date,month,year);
 }
 else
 {
   fputs("\t\t OUT PATIENT\n",fp2);
-}
-printf("ENTER THE MEDICINE WITH DOSAGE");
+ 
+  }
+printf("ENTER THE MEDICINE WITH DOSAGE\n");
 char m1[20],m2[20],m3[20],m4[20],m5[20];
 int dos1,dos2,dos3,dos4,dos5;
+printf("Enter Medicine1:");
 scanf("%s",m1);
+printf("Enter Dosage1:");
 scanf("%d",&dos1);
-fputs("Medicine1:",fp);
+fputs("MEDICINE1:",fp);
 fputs(m1,fp);
 fprintf(fp,"  %d\n",dos1);
+printf("Enter Medicine2:");
 scanf("%s",m2);
+printf("Enter Dosage2:");
 scanf("%d",&dos2);
-fputs("Medicine2:",fp);
+fputs("MEDICINE2:",fp);
 fputs(m2,fp);
 fprintf(fp,"  %d\n",dos2);
+printf("Enter Medicine3:");
 scanf("%s",m3);
+printf("Enter Dosage3:");
 scanf("%d",&dos3);
-fputs("Medicine3:",fp);
+fputs("MEDICINE3:",fp);
 fputs(m3,fp);
 fprintf(fp,"  %d\n",dos3);
+printf("Enter Medicine4:");
 scanf("%s",m4);
+printf("Enter Dosage4:");
 scanf("%d",&dos4);
-fputs("Medicine4:",fp);
+fputs("MEDICINE4:",fp);
 fputs(m4,fp);
 fprintf(fp,"  %d\n",dos4);
+printf("Enter Medicine5:");
 scanf("%s",m5);
+printf("Enter Dosage5:");
 scanf("%d",&dos5);
-fputs("Medicine5:",fp);
+fputs("MEDICINE5:",fp);
 fputs(m4,fp);
-fprintf(fp,"  %d\n",dos5);    
+fprintf(fp,"  %d\n",dos5); 
+   
 fclose(fp);
 fclose(fp2);
   }
