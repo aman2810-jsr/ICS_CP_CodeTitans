@@ -2,10 +2,10 @@
 
 ## Team members
 ```
-1. Aman Jain B23CH1002
-2. Mrudhul Tula B23EE1076
-3. Vaibhav Singh B23CI1043
-4. Vansh Tomar B23PH1027
+ 1.Aman Jain B23CH1002
+ 2.Mrudhul Tula B23EE1076
+ 3.Vaibhav Singh B23CI1043
+ 4.Vansh Tomar B23PH1027
 ```
 
 ## How to execute your code
