@@ -40,7 +40,7 @@ char reason_of_visit[20];
   printf("visit or registration:\n");
   scanf("%s",reason_of_visit);
 ```
-![random]()
+![](screenshots/random.png)
 
 -->If the purpose of visit is enquiry then entry the name of the doctor whom you want to enquire about and if the purpose of visit is registration then enter the personal details of the patient.
 ```c
