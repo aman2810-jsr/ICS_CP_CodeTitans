@@ -118,6 +118,7 @@ scanf("%s",m1);
 printf("Enter Dosage1:");
 scanf("%d",&dos1);
 ```
+![](screenshots/MEDICINE.png)
 
 
 
