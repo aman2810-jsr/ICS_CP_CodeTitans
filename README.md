@@ -22,6 +22,17 @@
 
 ## Execution guidelines
 -->Enter the data as per the given commands displayed on the terminal.
+
+-->Enter the file name with no space between the firsta and last name and the reg. number and add ".txt" at the end.
+
+-->For finding about the doctor and the patient just write the name.
+
+-->Enter the BP results as upper BP and lower BP with a space betwen them.
+
+-->Enter the name of the test and the inpatient and outpatient status in uppercae.
+
+-->If  prescribed medicine is less than 5 then enter NA.
+
 ## FORMAT EXECUTION
 --> Enter The Purpose of Visit:
 ```c
@@ -29,7 +40,6 @@ char reason_of_visit[20];
   printf("visit or registration:\n");
   scanf("%s",reason_of_visit);
 ```
--->
 -->If the purpose of visit is enquiry then entry the name of the doctor whom you want to enquire about and if the purpose of visit is registration then enter the personal details of the patient.
 ```c
 void search()
@@ -109,7 +119,6 @@ scanf("%d",&dos1);
 
 
 
-### format 
 
 
-# ICS_CP_CodeTitans
+
