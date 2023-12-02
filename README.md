@@ -62,6 +62,7 @@ void search()
     }
   }
 ```
+![](screenshots/DOCTOR.png)
 -->Enter the name of the doctor to visit then enter the result of the general tests.
 EX:
 ```c
@@ -90,6 +91,7 @@ void NS1()
     fprintf(fp,"\nDENGUE NS1\t\t%.2f\t\t<0.90",r);
   }
 ```
+![](screenshots/TESTS.png)
 -->Enter the inpatient outpatient status as suggested by the doctor.
 ```c
 printf("\nIN PATIENT OR OUT PATIENT");
