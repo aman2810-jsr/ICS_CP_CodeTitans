@@ -24,7 +24,9 @@ a)Code dependencies
 
 2.Doctors: https://github.com/aman2810-jsr/ICS_CP_CodeTitans/tree/45c7b0f5d01deff2549c479faeeb5719b67656b1/doctors
 
-3.
+3.Records: https://github.com/aman2810-jsr/ICS_CP_CodeTitans/blob/60d6db229f009b32189a5da75963bd8ceb595add/records1.txt
+
+b)No other modules are used.
 
 ## Execution guidelines
 -->Enter the data as per the given commands displayed on the terminal.
