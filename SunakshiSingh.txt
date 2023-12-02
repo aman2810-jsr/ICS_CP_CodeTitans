@@ -1,0 +1,6 @@
+Name           - Sunakshi Singh
+Age            - 39
+Gender         - Female
+Qualification  - MD - Dermatology, MBBS
+Specialization - Dermatologist
+Experience     - 14 years experience

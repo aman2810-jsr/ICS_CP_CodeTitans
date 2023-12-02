@@ -1,0 +1,6 @@
+Name           - Amrita Singh
+Age            - 43
+Gender         - Female
+Qualification  - MBBS, MS - Gynaecology
+Specialization - Gynaecologist
+Experience     - 16 years experience
