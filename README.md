@@ -19,8 +19,8 @@
 ## Environment setup
 
 ## Code dependencies
-######https://github.com/aman2810-jsr/ICS_CP_CodeTitans/tree/5cb5407a3d5a0672575d1abc58a799828bbde4f2/patients
-######https://github.com/aman2810-jsr/ICS_CP_CodeTitans/tree/45c7b0f5d01deff2549c479faeeb5719b67656b1/doctors
+1.Patients: https://github.com/aman2810-jsr/ICS_CP_CodeTitans/tree/5cb5407a3d5a0672575d1abc58a799828bbde4f2/patients
+2.Doctors: https://github.com/aman2810-jsr/ICS_CP_CodeTitans/tree/45c7b0f5d01deff2549c479faeeb5719b67656b1/doctors
 
 
 ### files to be used record/etc
