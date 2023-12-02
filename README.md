@@ -23,9 +23,6 @@
 
 2.Doctors: https://github.com/aman2810-jsr/ICS_CP_CodeTitans/tree/45c7b0f5d01deff2549c479faeeb5719b67656b1/doctors
 
-
-### files to be used record/etc
-
 ## Execution guidelines
 -->Enter the data as per the given commands displayed on the terminal.
 
